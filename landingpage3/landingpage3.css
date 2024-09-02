@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+#container{
+    display:inline;
+    align-items: center;
+}
+#navbar{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(237, 136, 4);
+    display: flex;
+    justify-content:space-between ;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 101;
+}
+#navbar #left{
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 20px;
+}
+#left a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+#left a:hover{
+    size: 3rem;
+    color: rgb(203, 218, 2);
+}
+#bottom h1{
+    margin-left: 60px;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section1 #main img{
+    position: relative;
+    height: 500px;
+    object-fit: cover;
+    z-index: 99;
+    width: 750px;
+    margin-top: -100px;
+}
+#scroll1{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    display: flex;
+    white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll1::-webkit-scrollbar{
+        display: none;
+}
+
+#scroll1 h1{
+    font-size: 120px;
+    font-weight: 600;
+    font-family: Gilroy;
+    margin-right: 30px;
+    letter-spacing: 3px; 
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll2{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: flex;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll2::-webkit-scrollbar{
+    display: none;
+}
+#scroll2 h1{
+    font-size: 120px;
+    font-weight: 600;
+    font-family: Gilroy;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    z-index: 100;
+    animation-name: scroll;
+    animation-timing-function:linear;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+#scroll3{
+    display: flex;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto; 
+}
+#scroll3::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll3 h1{
+    font-size: 120px;
+    font-weight: 600;
+    font-family: Gilroy;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#text{
+    font-size: 40px;
+    text-align: center;
+    width: 40%;
+    top: 82%;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    position: absolute;
+    color: rgb(6, 5, 5);
+    z-index: 99;
+}
+@keyframes scroll {
+    0%{
+        transform: translate(calc(-100% - 32px));
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+#products{
+display: flex;
+position: absolute;
+top: 100%;
+justify-content: space-evenly;
+height: 800px;
+width: 100%;
+}
+#products li{
+    list-style: none;
+    text-align: center;
+}
+#products img{
+    height: 400px;
+    width: 400px;
+}

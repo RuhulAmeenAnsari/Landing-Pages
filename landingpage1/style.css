@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#Left{
+ height: 100%;
+ width: 30%;
+position: relative;
+}
+#nav{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+}
+#nav-right{
+    display: flex;
+    align-items: center;
+}
+#nav-right a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+#nav-right i{
+    color: royalblue;
+}
+
+#Left #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#text h1{
+    font-size: 80px;
+}
+#text p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#text a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+#Right{
+    height: 100%;
+    width: 70%;
+    background-color: rgb(104, 165, 42);   
+}
+#right-top{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(16, 170, 108);
+    display: flex;
+}
+#top-left{
+height: 100%;
+width: 55%;
+background-image: url(https://plus.unsplash.com/premium_photo-1675667408018-3b64dbc55db1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-position: center;
+background-size:cover;
+}
+#top-right{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675667390417-d9d23160f4a6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#right-bottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #Left{
+        width: 100%;
+    }
+    #main #Right{
+        width:100%;
+    }
+}
